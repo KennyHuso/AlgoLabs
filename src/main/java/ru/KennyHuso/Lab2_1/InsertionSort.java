@@ -12,10 +12,10 @@ public class InsertionSort implements Sorting<Integer> {
             // Двигаем число влево, пока оно меньше
             while (j > 0 && nums.get(j) < nums.get(j - 1)) {
                 // Временно сохраняем текущее число
-                int temp = nums.get(j);
+                int numthis = nums.get(j);
                 // Передвигаем большее число вправо
                 nums.set(j, nums.get(j - 1));
-                nums.set(j - 1, temp);
+                nums.set(j - 1, numthis);
                 j--;
             }
         }
