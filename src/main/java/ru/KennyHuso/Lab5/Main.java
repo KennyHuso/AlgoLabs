@@ -3,9 +3,7 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(
-                new InputStreamReader(System.in)
-        );
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         HashMapImpl<String> map = new HashMapImpl<>();
         StringBuilder result = new StringBuilder();
@@ -31,7 +29,6 @@ public class Main {
                 map.delete(parts[1]);
             }
         }
-
         // Выводим результаты команд get
         System.out.print(result);
     }
