@@ -6,11 +6,8 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        Path inputPath = Path.of(
-                "D:\\Лабы\\Алг и прог 1 семак\\Labs\\src\\main\\java\\ru\\KennyHuso\\Lab7_1\\roguelike-input.csv");
-
-        Path outputPath = Path.of(
-                "D:\\Лабы\\Алг и прог 1 семак\\Labs\\src\\main\\java\\ru\\KennyHuso\\Lab7_1\\roguelike-output.txt");
+        Path inputPath = Paths.get("roguelike-input.csv");
+        Path outputPath = Paths.get("roguelike-output.txt");
 
         // Считываем игровое поле из файла
         List<int[]> rows = new ArrayList<>();

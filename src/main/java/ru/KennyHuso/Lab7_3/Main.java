@@ -5,8 +5,7 @@ import java.nio.file.*;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        Path inputPath = Path.of(
-                "D:\\Лабы\\Алг и прог 1 семак\\Labs\\src\\main\\java\\ru\\KennyHuso\\Lab7_3\\lcs-input.txt");
+        Path inputPath = Paths.get("lcs-input.txt");
 
         // Считываем две последовательности из файла
         String x;

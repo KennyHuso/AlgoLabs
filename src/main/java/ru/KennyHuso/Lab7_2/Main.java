@@ -5,11 +5,8 @@ import java.nio.file.*;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        Path inputPath = Path.of(
-                "D:\\Лабы\\Алг и прог 1 семак\\Labs\\src\\main\\java\\ru\\KennyHuso\\Lab7_2\\lis-input.txt");
-
-        Path outputPath = Path.of(
-                "D:\\Лабы\\Алг и прог 1 семак\\Labs\\src\\main\\java\\ru\\KennyHuso\\Lab7_2\\lis-output.txt");
+        Path inputPath = Paths.get("lis-input.txt");
+        Path outputPath = Paths.get("lis-output.txt");
 
         // Считываем входные данные
         int n;
@@ -26,9 +23,8 @@ public class Main {
             }
         }
 
-        // Массивы для динамического программирования
-        int[] dp = new int[n];
-        int[] prev = new int[n];
+        int[] dp = new int[n]; // Длина НВП, которая заканчивается на элементе с индексом i
+        int[] prev = new int[n]; // индекс предыдущего элемента этой подпоследовательности
 
         // Ищем наибольшую возрастающую подпоследовательность
         for (int i = 0; i < n; i++) {
